@@ -24,6 +24,10 @@ body {
 	color: $grey-dark;
 	font-family:$primary-font ;
 }
+.nav > li > a:focus, .nav > li > a:hover {
+	background: none;
+	outline: none;
+	}
 .main-bg {
 	background-image: url(../img/bg.png);
 	background-repeat: no-repeat;
@@ -139,7 +143,7 @@ ul.nav {
 		align-items: center;
 	}
 .banner {
-	padding: 273px 0 296px 0;
+	padding: 273px 0 291px 0;
 	&__slide {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -259,10 +263,14 @@ ul.nav {
 	}//next
 }
 .block {
-	padding: 95px 0 105px;
+	padding: 95px 0 90px;
 	&_gray {
 		background-color: #f4f4f4;
 		padding: 100px 0;
+			.col_dark_gr {
+		max-width: 560px;
+		margin-bottom: 33px;
+	}
 	}
 	&_blue {
 	background-color: $blue;
