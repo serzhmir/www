@@ -45,8 +45,6 @@ body {
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
-		max-width: 470px;
-		margin-bottom: 21px;
 	}
 	p {
 		font-weight: 400;
@@ -56,15 +54,14 @@ body {
 			color: $grey-light;
 			font-family: "SegoeUI";
 			font-size: 21px;
-			max-width: 450px;
-			margin-bottom: 17px;
+			max-width: 470px;
 		}
 		.col_dark_gr {
 			color: $grey-dark;
 			font-family: "SegoeUI";
 			font-size: 16px;
 			max-width: 533px;
-			margin-bottom: 25px;
+			margin-bottom: 32px;
 		}
 		a {
 			color: $blue;
@@ -274,22 +271,26 @@ ul.nav {
 	}
 	&_blue {
 	background-color: $blue;
+	padding: 30px 0 20px;
 	p {
 		color: $white;
+		font-size: 21px;
 	}
 	.btn { 
 		background-color: $yellow;
 		border-radius: 3px;
-		font-size: 16px;
+		font-size: 16px; 
 		font-weight: 700;
 		color: $blue;
 		text-transform: uppercase;
+		padding: 11px 18px;
 	}
 }//block_blue
 &_bg {
 	background-image: url(../img/night.png);
 	background-size: cover;
 	color: $white;
+	padding: 130px 0 118px 0;
 	p {
 		color: $white;
 		font-family: "SegoeUI";
@@ -303,15 +304,34 @@ ul.nav {
 			font-weight: 400;
 			line-height: 60px;
 			text-transform: uppercase;
-			letter-spacing: 12px;
+			letter-spacing: 9px;
 			font-family:$primary-font;
+			margin-bottom: 10px;
 		}
 	}
 }
 &_review {
-	background-image: url(../reviews-slide.png);
+	background-image: url(../img/reviews-slide.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	.blockqutes {
+		background-image: url(../img/blockqoutes.svg);
+		background-repeat: no-repeat;
+		display: block;
+		width: 25px;
+		height: 18px;
+		margin: 0 auto 20px;
+	}
+	&__p {
+		font-size: 20px;
+    font-weight: 400;
+    line-height: 37.94px;
+    color: #ffffff;
+	}
+	&__p:last-child {
+		text-transform: uppercase;
+		font-size: 14px;
+	}
 }
 }//block
 
@@ -342,7 +362,7 @@ ul.nav {
 			float: right;
 		&::before {
 			content: '';
-			height: 1000px;
+			height: 800px;
 			width: 270px;
 			position: absolute;
 			left: 0;
@@ -371,5 +391,12 @@ ul.nav {
 				text-decoration: none;
 				border-bottom: 2px solid transparent;
 			}
+		}
+		&__h2 {
+			max-width: 470px;
+			margin-bottom: 21px;
+		}
+		&__p {
+
 		}
 }//col
