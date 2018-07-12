@@ -32,6 +32,7 @@ body {
 	background-image: url(../img/bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	    padding-top: 50px;
 }
 .container-fluid {
 	max-width: 1200px;
@@ -89,7 +90,6 @@ body {
 	padding: 0;
 	width: 100%;
 	display: flex;
-	margin-top: 51px;
 	.nav-link {
 font-size: 14px;
 color: $white;
@@ -130,6 +130,7 @@ a.navbar-brand {
     position: absolute;
     left: 0;
     	width: 180px;
+    	margin-top: 22px;
 }
 ul.nav {
     position: absolute;
@@ -140,7 +141,7 @@ ul.nav {
 		align-items: center;
 	}
 .banner {
-	padding: 273px 0 291px 0;
+	padding: 341px 0 288px 0;
 	&__slide {
 		display: -webkit-flex;
 		display: -moz-flex;
