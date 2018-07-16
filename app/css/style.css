@@ -594,3 +594,68 @@ div#mapTwo,
 div#mapThree {
   height: 240px;
   width: 100%; }
+
+.modal-header {
+  position: relative;
+  border-bottom: 1px solid transparent;
+  padding: 15px 25px 0px; }
+
+.modal-body {
+  padding: 15px 25px 0px; }
+
+.modal-footer {
+  border-top: 1px solid transparent; }
+
+.modal-title {
+  color: #002e5b;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 48.01px;
+  text-transform: uppercase; }
+
+.modal .form-control {
+  border-right: 3px;
+  border: 1px solid #002e5b;
+  color: #002e5b;
+  font-size: 16px;
+  font-family: "SegoeUI";
+  padding: 10px 15px;
+  margin: 0 0 15px 0; }
+  .modal .form-control:focus {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3); }
+  .modal .form-control::-webkit-input-placeholder {
+    color: #a3a3a3; }
+  .modal .form-control::-moz-placeholder {
+    color: #a3a3a3; }
+  .modal .form-control:-moz-placeholder {
+    color: #a3a3a3; }
+  .modal .form-control:-ms-input-placeholder {
+    color: #a3a3a3; }
+
+.modal .submit {
+  background-color: #fde428;
+  color: #002e5b;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 11px 18px;
+  border: none;
+  letter-spacing: 0.6px; }
+  .modal .submit:hover {
+    cursor: pointer; }
+  .modal .submit:focus {
+    outline: none; }
+
+.modal button.close {
+  font-weight: 200;
+  font-size: 35px;
+  position: absolute;
+  right: 25px;
+  top: -webkit-calc(50% - 19px);
+  top: calc(50% - 19px);
+  color: #002e5b; }
+  .modal button.close:focus {
+    outline: none; }

@@ -4,6 +4,7 @@ $yellow-bg:#fde52c;
 $white:#fff;
 $grey-dark:#333333;
 $grey-light:#666666;
+$grey-plac:#a3a3a3;
 $primary-font:'Montserrat', sans-serif;
 
 @font-face {
@@ -655,3 +656,69 @@ div#mapThree {
     height: 240px;
     width: 100%;
 }
+
+.modal {
+	&-header {
+		position: relative;
+		border-bottom: 1px solid transparent;
+		padding: 15px 25px 0px;
+	}
+		&-body {
+		padding: 15px 25px 0px;
+	}
+	&-footer {
+		border-top: 1px solid transparent;
+	}
+	&-title {
+		color: $blue;
+		font-size: 21px;
+		font-weight: 700;
+		line-height: 48.01px;
+		text-transform: uppercase;
+	}
+	.form-control {
+		border-right: 3px;
+		border:1px solid $blue;
+		color: $blue;
+		font-size: 16px;
+		font-family: "SegoeUI";
+		padding: 10px 15px;
+		margin: 0 0 15px 0;
+		&:focus {
+			box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.30);
+		}
+&::-webkit-input-placeholder { color:$grey-plac; }
+&::-moz-placeholder          { color:$grey-plac; } 
+&:-moz-placeholder           { color:$grey-plac; } 
+&:-ms-input-placeholder      { color:$grey-plac; }
+	}
+	.submit {
+		background-color:$yellow;
+		color: $blue;
+		border-radius: 3px;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 11px 18px;
+		border: none;
+		letter-spacing: 0.6px;
+		&:hover {
+			cursor: pointer;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+		button.close {
+		font-weight: 200;
+		font-size: 35px;
+		position: absolute;
+		right: 25px;
+		top: calc(50% - 19px);
+		color: $blue;
+				&:focus {
+			outline: none;
+		}
+	}
+
+}//modal

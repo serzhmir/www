@@ -376,14 +376,22 @@ justo sapien, tempus </p>
 						</button>
 					</div>
 					<div class="modal-body">
-						<p><input class="form-control" type="text" placeholder="Your Name"></p>
-						<p><input class="form-control" type="text" placeholder="Your Company"></p>
-						<p><input class="form-control" type="email" placeholder="Your Email"></p>
-						<p><textarea class="form-control" name="textarea" id="textarea" cols="30" rows="10" placeholder="Your comment"></textarea></p>
+					<div class="form-container">
+						<div id="note"></div>
+						<div id="fields">
+										<form action="" id="ajax-contact-form">
+															<input class="form-control" type="text" placeholder="Your Name">
+															<input class="form-control" type="text" placeholder="Your Company">
+															<input class="form-control" type="email" placeholder="Your Email">
+															<textarea class="form-control" name="textarea" id="textarea" cols="30" rows="10" placeholder="Your comment"></textarea>
+															<input class="submit" type="submit" name="submit" value="Submit">
+										</form>
+						</div>
+						<!-- /#fields -->
+					</div>
+					<!-- /.form-container -->
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Send message</button>
 					</div>
 				</div>
 			</div>
@@ -394,6 +402,7 @@ justo sapien, tempus </p>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/map.js"></script>
 		<script src="slick/slick.min.js"></script>
+		<script src="js/contactform.js"></script>
 		<script>
 			$(window).scroll(function(){
    parallax();
